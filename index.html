@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo List</title>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="styles/style.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1 class="title">Комментарии</h1>
+        </div>
+    </header>
+    <main class="main">
+        <div class="container">
+            <form action="POST" class="add-comment-form">
+                <label>Ваше имя:<input type="text" name="name" minlength="3" required> </label>
+                <label>Дата создания:<input type="date" name="date"></label>
+                <label>Текст комментария:<textarea name="text" cols="30" rows="10" required></textarea></label>
+                <input type="submit" value="Добавить" name="btn" class="btn">
+            </form>
+            <ul class="comments-list"></ul>
+        </div>
+    </main>
+    <script defer src="js/script.js"></script>
+</body>
+</html>
